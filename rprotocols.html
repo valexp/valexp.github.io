@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="it">
+<head>
+	<meta charset="utf-8"/>
+	<title>VaL's Website</title>
+	<link href="lightbox2-master/src/css/lightbox.css" rel="stylesheet">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div id="big_wrapper">
+	<div id="header">
+		<nav id="primario">
+			<ul id="lista">
+				<li><a href="main.html">VaL</a></li>
+				<li><a href="ccna.html" id="selezionato">CCNA</a></li>
+				<li><a href="python.html">Python</a></li>
+				<li><a href="steam.html">Steam</a></li>
+			</ul>
+		</nav>
+		<nav id="secondario">
+			<ul id="sottolista">
+				<li><a href="ccna.html" id="sottoselezionato">OSI</a></li>
+				<li><a href="memorie.html">Boot/Memorie</a></li>
+				<li><a href="rprotocols.html">Routing Protocols</a></li>
+				<li><a href="stp.html">STP</a></li>
+				<li><a href="portsecurity.html">Port Security</a></li>
+				<li><a href="cabling.html">Cabling</a></li>
+				<li><a href="vlan.html">VLAN</a></li>
+				<li><a href="fhrp.html">Redundancy protocol</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div>
+		<table id="tabella">
+		  <tr>
+			<th>Protocol Features</th>
+			<th>RIP v1</th>
+			<th>RIP v2</th>
+			<th>OSPF</th>
+			<th>IS-IS</th>
+			<th>EIGRP</th>
+			<th>BGP</th>
+		  </tr>
+		  <tr>
+			<td>Type</td>
+			<td colspan="5">IGP</td>
+			<td>EGP</td>
+		  </tr>
+		  <tr>
+			<td>Convergence</td>
+			<td colspan="2">Slow</td>
+			<td colspan="2">Fast</td>
+			<td>Very Fast</td>
+			<td>Average</td>
+		  </tr>
+		  <tr>
+			<td>Class</td>
+			<td colspan="2">Distance Vector</td>
+			<td colspan="2">Link State</td>
+			<td>Advanced Distance Vector</td>
+			<td>Path Vector</td>
+		  </tr>
+		  <tr>
+			<td>Administrative Distance</td>
+			<td colspan="2">120</td>
+			<td>110</td>
+			<td>115</td>
+			<td>5(summary)<br>90(internal)<br>170(external)</td>
+			<td>20(external)<br>200(internal)</td>
+		  </tr>
+		  <tr>
+			<td>Metric</td>
+			<td colspan="2">Hop Count (max 15)</td>
+			<td colspan="2">Cost</td>
+			<td>Composite</td>
+			<td>Path Attributes</td>
+		  </tr>
+		  <tr>
+			<td>Classless</td>
+			<td>No</td>
+			<td colspan="5">Yes</td>
+		  </tr>
+		  <tr>
+			<td>Algorithm</td>
+			<td colspan="2">Bellman-Ford</td>
+			<td colspan="2">Dijkstra (SPF)</td>
+			<td>DUAL</td>
+			<td>Best PATH</td>
+		  </tr>
+		  <tr>
+			<td>Transport Type</td>
+			<td colspan="2">UDP (port 520)</td>
+			<td>IP Protocol 89</td>
+			<td>Layer 2</td>
+			<td>IP Protocol 88</td>
+			<td>TCP (port 179)</td>
+		  </tr>
+		  <tr>
+			<td>Routing Updates</td>
+			<td colspan="2">30 Seconds</td>
+			<td colspan="4">Only when change occurs</td>
+		  </tr>
+		  <tr>
+			<td>Routing Table Entry</td>
+			<td colspan="2">R</td>
+			<td>O</td>
+			<td>i</td>
+			<td>D</td>
+			<td>B</td>
+		  </tr>
+		</table>
+		<table>
+			<tr>
+				<th>Requirement</th>
+				<th>EIGRP for IPv4</th>
+				<th>EIGRP for IPv6</th>
+				<th>OSPFv3</th>
+				<th>OSPFv6</th>
+			</tr>
+			<tr>
+				<td>Interfaces must be in up/up states</td>
+				<td colspan="4">Yes</td>
+			</tr>
+			<tr>
+				<td>Interfaces must be in the same subnet</td>
+				<td>Yes</td>
+				<td>No</td>
+				<td>Yes</td>
+				<td>No</td>
+			</tr>
+			<tr>
+				<td>ACLs must not filter routing protocols messages</td>
+				<td colspan="4">Yes</td>
+			</tr>
+			<tr>
+				<td>Must pass routing protocol neighbor authentication(if configured)</td>
+				<td colspan="4">Yes</td>
+			</tr>
+			<tr>
+				<td>Hello and hold/dead timers must match</td>
+				<td colspan="2">No</td>
+				<td colspan="2">Yes</td>
+			</tr>
+			<tr>
+				<td>Router IDs must be unique</td>
+				<td colspan="2">No</td>
+				<td colspan="2">Yes</td>
+			</tr>
+			<tr>
+				<td>Must use the same ASN/Process ID on the router configuration command</td>
+				<td colspan="2">Yes</td>
+				<td colspan="2">No</td>
+			</tr>
+		</table>
+		<table id="tabellagrande">
+			<tr>
+				<th>Function</th>
+				<th>EIGRP for IPv4</th>
+				<th>EIGRP for IPv6</th>
+				<th>OSPFv3</th>
+				<th>OSPFv6</th>
+			</tr>
+			<tr>
+				<td>Create Process</td>
+				<td>router eigrp AS-NUMBER</td>
+				<td>ipv6 router eigrp AS-NUMBER</td>
+				<td>router ospf PROCESS-ID</td>
+				<td>ipv6 router ospf PROCESS-ID</td>
+			</tr>
+			<tr>
+				<td>Define router ID explicity(router mode)</td>
+				<td colspan="2">eigrp router-id NUMBER</td>
+				<td colspan="2">router-id NUMBER</td>
+			</tr>
+			<tr>
+				<td>Change number of concurrent router(router mode)</td>
+				<td colspan="4">maximum-paths NUMBER</td>
+			</tr>
+			<tr>
+				<td>Set the variance multiplier(router mode)</td>
+				<td colspan="2">variance MULTIPLIER</td>
+				<td colspan="2">n/a</td>
+			<tr>
+				<td>Influence metric calculation(interface mode)</td>
+				<td colspan="2">bandwith VALUE - delay VALUE</td>
+				<td colspan="2">bandwith VALUE - cost VALUE</td>
+			</tr>
+			<tr>
+				<td>Change Hello timer(interface mode)</td>
+				<td>ip hello-interval eigrp ASN SECONDS</td>
+				<td>ipv6 hello-interval eigrp ASN SECONDS</td>
+				<td>ip ospf hello-interval SECONDS</td>
+				<td>ipv6 ospf hello-interval SECONDS</td>
+			</tr>
+			<tr>
+				<td>Change Hold/Dead timer(interface mode)</td>
+				<td>ip hold-time eigrp ASN SECONDS</td>
+				<td>ipv6 hold-time eigrp ASN SECONDS</td>
+				<td>ip ospf dead-interval SECONDS</td>
+				<td>ipv6 ospf dead-interval SECONDS</td>
+			</tr>
+			<tr>
+				<td rowspan="2">Enable the routing protocol on an interface</td>
+				<td rowspan="2">network IP-ADDRESS WILDCARD-MASK</td>
+				<td rowspan="2">ipv6 eigrp ASN (interface subcommand)</td>
+				<td>network IP-ADDRESS WILDCARD-MASK area AREA</td>
+				<td rowspan="2">ipv6 ospf PROCESS-ID area AREA (interface subcommand)</td>
+			</tr>
+			<tr>
+				<td>ip ospf PROCESS-ID area AREA (interface subcommand)</td>
+			</tr>
+		</table>
+	</div>
+	<footer id="footer">
+		Copyright Valentino D'Anesio 2016
+	</footer>
+	</div>
+	<script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
+</body>
+</html>

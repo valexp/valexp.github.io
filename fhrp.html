@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="it">
+<head>
+	<meta charset="utf-8"/>
+	<title>VaL's Website</title>
+	<link href="lightbox2-master/src/css/lightbox.css" rel="stylesheet">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div id="big_wrapper">
+	<div id="header">
+		<nav id="primario">
+			<ul id="lista">
+				<li><a href="main.html">VaL</a></li>
+				<li><a href="ccna.html" id="selezionato">CCNA</a></li>
+				<li><a href="python.html">Python</a></li>
+				<li><a href="steam.html">Steam</a></li>
+			</ul>
+		</nav>
+		<nav id="secondario">
+			<ul id="sottolista">
+				<li><a href="ccna.html" id="sottoselezionato">OSI</a></li>
+				<li><a href="memorie.html">Boot/Memorie</a></li>
+				<li><a href="rprotocols.html">Routing Protocols</a></li>
+				<li><a href="stp.html">STP</a></li>
+				<li><a href="portsecurity.html">Port Security</a></li>
+				<li><a href="cabling.html">Cabling</a></li>
+				<li><a href="vlan.html">VLAN</a></li>
+				<li><a href="fhrp.html">Redundancy protocol</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div>
+		<table id="tabella">
+		  <tr>
+			<th>Protocol Features</th>
+			<th>HSRP</th>
+		  </tr>
+		  <tr>
+			<td>Name</td>
+			<td>Hot Standby Router Protocol</td>
+		  </tr>
+		  <tr>
+			<td>Scope</td>
+			<td>Cisco Proprietary</td>
+		  </tr>
+		  <tr>
+			<td>Standard</td>
+			<td>RFC 2281</td>
+		  </tr>
+		  <tr>
+			<td>OSI Layer</td>
+			<td>Layer 3</td>
+		  </tr>
+		  <tr>
+			<td>Load Balancing</td>
+			<td>No</td>
+		  </tr>
+		  <tr>
+			<td>Multicast Group IP Address</td>
+			<td>224.0.0.2 in v1<br>224.0.0.102 in v2</td>
+		  </tr>
+		  <tr>
+			<td>Transport Port Number</td>
+			<td>UDP 1985</td>
+		  </tr>
+		  <tr>
+			<td>Timers</td>
+			<td>Hello 3 seconds<br>Hold 10 seconds</td>
+		  </tr>
+		  <tr>
+			<td>Election</td>
+			<td>Active Router:<br>1. Highest Priority<br>2. Highest IP</td>
+		  </tr>
+		  <tr>
+			<td>Router Role</td>
+			<td>1. One Active Router, One Standby Router<br>2. One or more Listening Routers</td>
+		  </tr>
+		  <tr>
+			<td>Group Virtual Mac Adress</td>
+			<td>0000.0C07.ACxx v1<br>0000.0C9F.Fxxx v2</td>
+		  </tr>
+		  <tr>
+			<td>Manual Virtual Mac Adress Assign</td>
+			<td>Yes</td>
+		  </tr>
+		  <tr>
+			<td>Virtual IP can also be a real address</td>
+			<td>No</td>
+		  </tr>
+		  <tr>
+			<td>Preempt enabled by default</td>
+			<td>No</td>
+		  </tr>
+		  <tr>
+			<td>Multiple forwarding router per group</td>
+			<td>No</td>
+		  </tr>
+		  <tr>
+			<td>Authentication supported</td>
+			<td>Yes - MD5</td>
+		  </tr>
+		  <tr>
+			<td>Group ID</td>
+			<td>v1: 0-255 (Default 0)<br>v2: 0-4095 (Default 0)</td>
+		  </tr>
+		  <tr>
+			<td>Priority</td>
+			<td>0-255 (Default 100)</td>
+		  </tr>
+		  <tr>
+			<td>IPv6 Support</td>
+			<td>Yes (v2)</td>
+		  </tr>
+		</table>
+	</div>
+	<div>
+		<table id="tabellagrande">
+			<tr>
+				<th>Comando</th>
+				<th>Descrizione</th>
+				<th>Modalità</th>
+			</tr>
+			<tr>
+				<td>STANDBY group IP virtual-ip</td>
+				<td>Attivo HSRP assegnado il router ad un gruppo che dovrà essere uguale in tutti i router. Anche l'IP virtuale dovrà essere lo stesso e nella stessa subnet degli host</td>
+				<td>Interface</td>
+			</tr>
+			<tr>
+				<td>STANDBY group PRIORITY priorità</td>
+				<td>Opzionale,default 100. Quello con la priorità più alta diventa active.</td>
+				<td>Interface</td>
+			</tr>
+			<tr>
+				<td>STANDBY group PREEMPT</td>
+				<td>Opzionale, di default è disabilitato. Se abilitato il router che si collega per secondo,se ha una priorità più alta, diventerà active</td>
+				<td>Interface</td>
+			</tr>
+			<tr>
+				<td>STANDBY VERSION numero</td>
+				<td>Opzionale, di default viene usata la versione 1.Scelgo la versione da utilizzare: 1 o 2. Vale per tutti i gruppi</td>
+				<td>Interface</td>
+			</tr>
+		</table>
+	</div>
+	<footer id="footer">
+		Copyright Valentino D'Anesio 2016
+	</footer>
+	</div>
+	<script src="lightbox2-master/dist/js/lightbox-plus-jquery.js"></script>
+</body>
+</html>

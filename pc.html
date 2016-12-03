@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="it">
+<head>
+	<meta charset="utf-8"/>
+	<title>VaL's Website</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="pc.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="pc.js"></script>
+</head>
+<body>
+	<div id="big_wrapper">
+		<div id="header">
+		<div id="hoverdiv"></div>
+			<nav id="primario">
+				<ul id="lista">
+					<li><a href="main.html">VaL</a></li>
+					<li><a href="ccna.html">CCNA</a></li>
+					<li><a href="python.html">Python</a></li>
+					<li><a href="steam.html">Steam</a></li>
+				</ul>
+			</nav>
+			<nav id="secondario">
+			</nav>
+		</div>
+		<div id="cerca-totale">
+		<p id="cerca"><input type="text" id="cercanome" maxlength="20"></input></p>
+		<span id="cercanome_feedback"></span><span id="co"></span>
+		<div id="risultato">
+			<span>Totale: </span><span id="totale"></span><span>€</span>
+		</div>
+		</div>
+			<table class="pc">
+				<tr>
+					<th colspan="4">Processori</th>
+					<th colspan="3">Scheda Madre</th>
+					<th colspan="3">RAM</th>
+					<th colspan="3">GPU</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="processori" value="Sempron 2650" id="Sempron 2650" class="AM1 DDR3"><label for="Sempron 2650">Sempron 2650</label></td>
+					<td>AM1</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-cpu_amd_sempron_2650_r3_series_145ghz_socket_am1_1mb_25w_radeon_hd-52172.htm">25.70€</a></td>
+					<td></td>
+					<td><input type="checkbox" name="schedemadri" value="ASRock AM1B-M" id="ASRock AM1B-M" class="AM1 DDR3"><label for="ASRock AM1B-M">ASRock AM1B-M</label></td>
+					<td>AM1</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-scheda_madre_asrock_am1b_m_socket_am1_ddr3_sata3_usb3_microatx_90_mxgsv0_a0uayz-52175.htm">27.10€</a></td>
+					<td><input type="checkbox" name="ram" value="DDR3-1600-2GB" id="DDR3-1600-2GB" class="DDR3"><label for="DDR3-1600-2GB">DDR3 Crucial 1600MHz</label></td>
+					<td>2GB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-ram_ddr3_crucial_1600mhz_2gb_1x2gb_cl11-58427.htm">13.10€</a></td>
+					<td><input type="checkbox" name="gpu" value="GV-N950OC-2GD" id="GV-N950OC-2GD"><label for="GV-N950OC-2GD">GTX 950</label></td>
+					<td>2GB</td>
+					<td><a target="_blank" href="http://www.diginetstore.it/geforce-900/1081-schedavideo-gigabyte-gtx-950-n950oc-2gd-2gb-pci-edvihdmidp.html">144.00€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="processori" value="Sempron 3850" id="Sempron 3850" class="AM1 DDR3"><label for="Sempron 3850">Sempron 3850</label></td>
+					<td>AM1</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-cpu_amd_sempron_3850_r3_series_13ghz_socket_am1_2mb_25w_radeon_hd-52173.htm">28.10€</a></td>
+					<td>+50%</td>
+					<td><input type="checkbox" name="schedemadri" value="MSI AM1I" id="MSI AM1I" class="AM1 DDR3"><label for="MSI AM1I">MSI AM1I</label></td>
+					<td>AM1</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-scheda_madre_msi_am1i_socket_am1_ddr3_usb3_sata3_miniitx_7865_001r-68511.htm">33.00€</a></td>
+					<td><input type="checkbox" name="ram" value="DDR3-1600-4GB" id="DDR3-1600-4GB" class="DDR3"><label for="DDR3-1600-4GB">DDR3 Corsair Value 1600MHz</label></td>
+					<td>4GB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-ram_ddr3_corsair_value_1600mhz_4gb_1x4gb_cl11_15v-48474.htm">20.70€</a></td>
+					<td><input type="checkbox" name="gpu" value="AXR7 370 2GBD5-PPDHE" id="AXR7 370 2GBD5-PPDHE"><label for="AXR7 370 2GBD5-PPDHE">R7 370</label></td>
+					<td>2GB</td>
+					<td><a target="_blank" href="http://www.prokoo.com/scheda-video-powercolor-2048mbpcie2xdvihdmi-p-158329.html">128.00€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="processori" value="A4-4000" id="A4-4000" class="FM2 DDR3"><label for="A4-4000">A4-4000</label></td>
+					<td>FM2</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-cpu_amd_a4_4000_2_core_30ghz_socket_fm2_1mb_hd7480d_65w_boxed_ad4000okhlbox-38519.htm">28.60€</a></td>
+					<td>+41%</td>
+					<td><input type="checkbox" name="schedemadri" value="ASUS AM1M-A" id="ASUS AM1M-A" class="AM1 DDR3"><label for="ASUS AM1M-A">ASUS AM1M-A</label></td>
+					<td>AM1</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-scheda_madre_asus_am1m_a_socket_am1_ddr3_sata3_usb3_vga_dvi_hdmi_matx_90mb0ir0_m0eay1-52254.htm">35.10€</a></td>
+					<td><input type="checkbox" name="ram" value="DDR3-1600-8GB" id="DDR3-1600-8GB" class="DDR3"><label for="DDR3-1600-8GB">DDR3 Corsair Value 1600MHz</label></td>
+					<td>8GB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-ram_ddr3_corsair_value_1600mhz_8gb_1x8gb_cl11_15v-48475.htm">34.80€</a></td>
+					<td><input type="checkbox" name="gpu" value="11257-00-20G" id="11257-00-20G"><label for="11257-00-20G">RX 460</label></td>
+					<td>2GB</td>
+					<td><a target="_blank" href="http://www.bpm-power.com/it/product/1654507/">121.70€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="processori" value="A4-4020" id="A4-4020" class="FM2 DDR3"><label for="A4-4020">A4-4020</label></td>
+					<td>FM2</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-cpu_amd_a4_4020_2_core_socket_fm2_32ghz_1mb_32nm_radeon_hd_7480d-51950.htm">29.30€</a></td>
+					<td>+8%</td>
+					<td><input type="checkbox" name="schedemadri" value="ASRock AM1B-ITX" id="ASRock AM1B-ITX" class="AM1 DDR3"><label for="ASRock AM1B-ITX">ASRock AM1B-ITX</label></td>
+					<td>AM1</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-scheda_madre_asrock_am1b_itx_socket_am1_ddr3_sata3_usb3_miniitx_90_mxgt50_a0uayz-52174.htm">30.70€</a></td>
+					<td><input type="checkbox" name="ram" value="DDR4-2400-8GB" id="DDR4-2400-8GB" class="DDR4"><label for="DDR4-2400-8GB">DDR4 G.Skill 2400MHz</label></td>
+					<td>8GB</td>
+					<td><a target="_blank" href="https://www.amazon.it/dp/B015FY0OO2">33.65€</a></td>
+					<td><input type="checkbox" name="gpu" value="AA-02G-P4-2966-KR" id="AA-02G-P4-2966-KR"><label for="AA-02G-P4-2966-KR">GTX 960</label></td>
+					<td>2GB</td>
+					<td><a target="_blank" href="http://www.puntocomshop.it/evga/27566-vga-4gb-evga-geforce-gtx960-ssc-acx-20-2xdvihdmidpddr5a-4250812407290.html">167.64€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="processori" value="A4-5300" id="A4-5300" class="FM2 DDR3"><label for="A4-5300">A4-5300</label></td>
+					<td>FM2</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-cpu_amd_a4_5300_2_core_34ghz_socket_fm2_1mb_hd7480d_65w_boxed_ad5300okhjbox-32847.htm">32.80€</a></td>
+					<td>+4%</td>
+					<td><input type="checkbox" name="schedemadri" value="ASRock FM2A58M-VG3+" id="ASRock FM2A58M-VG3+" class="FM2 DDR3"><label for="ASRock FM2A58M-VG3+">ASRock FM2A58M-VG3+</label></td>
+					<td>FM2</td>
+					<td><a target="_blank" href="https://www.amazon.it/dp/B00ON2SKCG">29.91€</a></td>
+					<td><input type="checkbox" name="ram" value="DDR4-2666-8GB" id="DDR4-2666-8GB" class="DDR4"><label for="DDR4-2666-8GB">DDR4 Kingston 2666MHz</label></td>
+					<td>8GB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-ram_ddr4_kingston_technology_fury_2666mhz_8gb_1x8gb_cl15_hx426c15fb8-97011.htm">42.40€</a></td>
+					<td><input type="checkbox" name="gpu" value="AA-90YV08D0-M0NA00" id="AA-90YV08D0-M0NA00"><label for="AA-90YV08D0-M0NA00">R9 380</label></td>
+					<td>2GB</td>
+					<td><a target="_blank" href="http://www.puntocomshop.it/asus/239265-asus-strix-r9380-dc2oc-2gd5-gaming-cod-90yv08d0-m0na00-4712900094183.html">156.60€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="processori" value="A6-5400" id="A6-5400" class="FM2 DDR3"><label for="A6-5400">A6-5400</label></td>
+					<td>FM2</td>
+					<td><a target="_blank" href="http://www.taocomputer.eu/shop2007/scheda.asp?id=25883">34.73€</a></td>
+					<td>+6%</td>
+					<td><input type="checkbox" name="schedemadri" value="ASRock FM2A58M-DG3+" id="ASRock FM2A58M-DG3+" class="FM2 DDR3"><label for="ASRock FM2A58M-DG3+">ASRock FM2A58M-DG3+</label></td>
+					<td>FM2</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-scheda_madre_asrock_fm2a58m_dg3_socket_fm2_ddr3_sata2_usb2_microatx_fm2a58m_dg3-55973.htm">39.60€</a></td>
+					<td><input type="checkbox" name="ram" value="DDR4-3000-8GB" id="DDR4-3000-8GB" class="DDR4"><label for="DDR4-3000-8GB">DDR4 HyperX Savage 3000MHz</label></td>
+					<td>8GB</td>
+					<td><a target="_blank" href="https://www.amazon.it/dp/B0151PXSMK">50.75€</a></td>
+					<td><input type="checkbox" name="gpu" value="ZT-90311-10M" id="ZT-90311-10M"><label for="ZT-90311-10M">GTX 960</label></td>
+					<td>4GB</td>
+					<td><a target="_blank" href="https://www.amazon.it/dp/B014AWM78G/">179.55€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="processori" value="A4-6300" id="A4-6300" class="FM2 DDR3"><label for="A4-6300">A4-6300</label></td>
+					<td>FM2</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-cpu_amd_a4_6300_2_core_socket_fm2_37ghz_1mb_32nm_radeon_hd_8370d-58552.htm">33.50€</a></td>
+					<td>+1%</td>
+					<td><input type="checkbox" name="schedemadri" value="ASRock 970 Extreme3 R2.0" id="ASRock 970 Extreme3 R2.0" class="AM3 DDR3"><label for="ASRock 970 Extreme3 R2.0">ASRock 970 Extreme3 R2.0</label></td>
+					<td>AM3</td>
+					<td><a target="_blank" href="#">0€</a></td>
+					<td><input type="checkbox" name="ram" value="DDR4-2400-16GB" id="DDR4-2400-16GB" class="DDR4"><label for="DDR4-2400-16GB">DDR4 Team Group 2400MHz</label></td>
+					<td>16GB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-memoria_team_group_ted416g2400c1601_ram_2x8gb_ddr4_2400mhz_16gb_cl16_ted416g2400c1601-120888.htm">59.60€</a></td>
+					<td><input type="checkbox" name="gpu" value="R9-380P-4DF5" id="R9-380P-4DF5"><label for="R9-380P-4DF5">R9 380</label></td>
+					<td>4GB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-vga_xfx_amd_radeon_r9_380_dual_dissipation_core_990mhz_memory_gddr5-87519.htm">190.70€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="processori" value="G1610" id="G1610" class="1155 DDR3"><label for="G1610">G1610</label></td>
+					<td>1155</td>
+					<td><a target="_blank" href="#">0€</a></td>
+					<td>+13%</td>
+					<td><input type="checkbox" name="schedemadri" value="ASRock H61M-VG4" id="ASRock H61M-VG4" class="1155 DDR3"><label for="ASRock H61M-VG4">ASRock H61M-VG4</label></td>
+					<td>1155</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-scheda_madre_asrock_h61m_vg4_socket_1155_intel_h61_ddr3_sata2_usb2-46053.htm">44.20€</a></td>
+					<td><input type="checkbox" name="ram" value="DDR4-2666-16GB" id="DDR4-2666-16GB" class="DDR4"><label for="DDR4-2666-16GB">DDR4 G.Skill Ripjaws V 2666MHz</label></td>
+					<td>16GB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-ram_ddr4_gskill_ripjaws_v_2666mhz_16gb_2x8gb_15_15_15_35_12v_f4_2666c15d_16gvr-89292.htm">71.40€</a></td>
+					<td><input type="checkbox" name="gpu" value="AXR9 380X 4GBD5-PPDHV2E" id="AXR9 380X 4GBD5-PPDHV2E"><label for="AXR9 380X 4GBD5-PPDHV2E">R9 380X</label></td>
+					<td>4GB</td>
+					<td><a target="_blank" href="http://www.omegashop.it/index.php?option=com_virtuemart&view=productdetails&virtuemart_product_id=52017&virtuemart_category_id=46">190.75€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="processori" value="G1840" id="G1840" class="1150 DDR3"><label for="G1840">G1840</label></td>
+					<td>1150</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-cpu_intel_celeron_g1840_dual_core_socket_1150_28ghz_2mb_22nm_con_gpu-53711.htm">37.60€</a></td>
+					<td>+17%</td>
+					<td><input type="checkbox" name="schedemadri" value="ASRock H81M-DG4" id="ASRock H81M-DG4" class="1150 DDR3"><label for="ASRock H81M-DG4">ASRock H81M-DG4</label></td>
+					<td>1150</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-scheda_madre_asrock_h81m_dg4_intel_h81_ddr3_sata3_usb3_microatx-70869.htm">39.40€</a></td>
+					<td><input type="checkbox" name="ram" value="DDR4-3000-16GB" id="DDR4-3000-16GB" class="DDR4"><label for="DDR4-3000-16GB">DDR4 G.Skill Ripjaws V 3000MHz</label></td>
+					<td>16GB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-ram_ddr4_gskill_ripjaws_v_3000mhz_16gb_2x8gb_15_16_16_35_135v-95547.htm">76.30€</a></td>
+					<td><input type="checkbox" name="gpu" value="HS-470R4LTNR" id="HS-470R4LTNR"><label for="HS-470R4LTNR">RX 470</label></td>
+					<td>4GB</td>
+					<td><a target="_blank" href="http://www.qmaxtech.it/it/schede-video/105468-xfx-rx470p4sfd5-amd-radeon-rx-470-4gb-scheda-video-0778656072176.html?utm_source=trovaprezzi&utm_medium=cpc&utm_campaign=prodotto">202.88€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="processori" value="G3900" id="G3900" class="1151 DDR4 DDR3"><label for="G3900">G3900</label></td>
+					<td>1151</td>
+					<td><a target="_blank" href="http://www.diginetstore.it/1151/2343-intel-cpu-intel-celeron-g3900-box-28ghz-2mb-1151.html">44.60€</a></td>
+					<td>+10%</td>
+					<td><input type="checkbox" name="schedemadri" value="Gigabyte GA-B85M-D2V" id="Gigabyte GA-B85M-D2V" class="1150 DDR3"><label for="Gigabyte GA-B85M-D2V">Gigabyte GA-B85M-D2V</label></td>
+					<td>1150</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-scheda_madre_gigabyte_ga_b85m_d2v_socket_1150_intel_b85_ddr3_sata3-51459.htm">48.50€</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><input type="checkbox" name="gpu" value="AA-N97V-1SDN-M5DSX" id="AA-N97V-1SDN-M5DSX"><label for="AA-N97V-1SDN-M5DSX">GTX 970</label></td>
+					<td>4GB</td>
+					<td><a target="_blank" href="http://www.puntocomshop.it/inno3d/127508-vga-4gb-inno3d-gtx-970-oc-herculez-x2-dual-dvidphdmia-835168020573.html">208.47€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="processori" value="G3250" id="G3250" class="1150 DDR3"><label for="G3250">G3250</label></td>
+					<td>1150</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-cpu_intel_pentium_dual_core_g3250_socket_1150_32ghz_3mb_22nm_hd-59279.htm">52.60€</a></td>
+					<td>+3%</td>
+					<td><input type="checkbox" name="schedemadri" value="ASRock H110M-DVS/D3" id="ASRock H110M-DVS/D3" class="1151 DDR3"><label for="ASRock H110M-DVS/D3">ASRock H110M-DVS/D3</label></td>
+					<td>1151</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-scheda_madre_asrock_h110m_dvsd3_socket_1151_ddr3_sata3_usb3_matx-106595.htm">48.30€</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><input type="checkbox" name="gpu" value="11260-02-20G" id="11260-02-20G"><label for="11260-02-20G">RX 480</label></td>
+					<td>4GB</td>
+					<td><a target="_blank" href="http://www.esseshop.it/svga-sapphire-rx-480-nitro-4096mb-p-72679.html?utm_campaign=trovaprezzi&amp;utm_medium=cpc&amp;utm_source=trovaprezzi">265.50€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="processori" value="G4400" id="G4400" class="1151 DDR4 DDR3"><label for="G4400">G4400</label></td>
+					<td>1151</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-cpu_intel_pentium_dual_core_g4400_socket_1151_skylake_35ghz_3mb_hd-94759.htm">57.10€</a></td>
+					<td>+3%</td>
+					<td><input type="checkbox" name="schedemadri" value="ASRock B150M-HDV/D3" id="ASRock B150M-HDV/D3" class="1151 DDR3"><label for="ASRock B150M-HDV/D3">ASRock B150M-HDV/D3</label></td>
+					<td>1151</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-scheda_madre_asrock_b150m_hdvd3_socket_1151_b150_ddr3_usb3_sata3_microatx-118391.htm">58.40€</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><input type="checkbox" name="gpu" value="STRIX-R9390-DC3" id="STRIX-R9390-DC3"><label for="STRIX-R9390-DC3">R9 390</label></td>
+					<td>8GB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-scheda_video_gigabyte_amd_radeon_r9_390_8gb_amd_radeon_r9_390_8gb-121192.htm">294.40€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="processori" value="X4 860K" id="X4 860K" class="FM2+ DDR3"><label for="X4 860K">X4 860K</label></td>
+					<td>1151</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-cpu_amd_x4_860k_37ghz_socket_fm2_4mb_95w_boxed-104646.htm">70.90€</a></td>
+					<td>+0%</td>
+					<td><input type="checkbox" name="schedemadri" value="MSI H110M PRO-D" id="MSI H110M PRO-D" class="1151 DDR4"><label for="MSI H110M PRO-D">MSI H110M PRO-D</label></td>
+					<td>1151</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-scheda_madre_msi_h110m_pro_d_socket_1151_ddr4_sata3_microatx-103788.htm">49.90€</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><input type="checkbox" name="gpu" value="RX-480P8DFA6" id="RX-480P8DFA6"><label for="RX-480P8DFA6">RX 480</label></td>
+					<td>8GB</td>
+					<td><a target="_blank" href="http://www.restartcomputer.it/schede-grafiche/36889-asus-rx480-8g-amd-8gb-4712900455236.html">280.57€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="processori" value="G4500" id="G4500" class="1151 DDR4 DDR3"><label for="G4500">G4500</label></td>
+					<td>1151</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-cpu_intel_pentium_dual_core_g4500_socket_1151_skylake_35ghz_3mb-98069.htm">72.60€</a></td>
+					<td>+0%</td>
+					<td><input type="checkbox" name="schedemadri" value="MSI B150M PRO-VD" id="MSI B150M PRO-VD" class="1151 DDR4"><label for="MSI B150M PRO-VD">MSI B150M PRO-VD</label></td>
+					<td>1151</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-schede_madri_msi_mb_b150m_pro_vdsocket_1151_b150m_ddr4_usb3_sata3_m_atx-104250.htm">63.60€</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><input type="checkbox" name="gpu" value="NE51060015F9-1061D" id="NE51060015F9-1061D"><label for="NE51060015F9-1061D">GTX 1060</label></td>
+					<td>3GB</td>
+					<td><a target="_blank" href="http://www.qmaxtech.it/it/schede-video/105598-xpertvision-ne51060015f91061d-nvidia-geforce-gtx-1060-3gb-scheda-video-4710636269271.html">217.00€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="processori" value="FD6350FRHKBOX" id="FD6350FRHKBOX" class="AM3 DDR3"><label for="FD6350FRHKBOX">FX-6350</label></td>
+					<td>AM3+</td>
+					<td><a target="_blank" href="http://www.puntocomshop.it/amd-sockel-am3/273082-amd-fx-6350-6-core-42ghz-am3-14mb-cache-125w-retail-cod-fd6350frhkbox-730143302579.html">116.16€</a></td>
+					<td>+3%</td>
+					<td><input type="checkbox" name="schedemadri" value="90-MIBI40-G0EAY0GZ" id="90-MIBI40-G0EAY0GZ" class="AM3 DDR3"><label for="90-MIBI40-G0EAY0GZ">Asus M5A78L-M LX3</label></td>
+					<td>AM3+</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-scheda_madre_asus_m5a78l_m_lx3_socket_am3_amd_760g_ddr3_sata2_usb20_microatx-35560.htm">45.00€</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td><input type="checkbox" name="gpu" value="ZT-P10600D-10B" id="ZT-P10600D-10B"><label for="ZT-P10600D-10B">GTX 1060</label></td>
+					<td>6GB</td>
+					<td><a target="_blank" href="http://www.restartcomputer.it/schede-grafiche/38287-zotac-vga-geforce-gtx-1060-hdmi-6-gb-ddr5-192-bit-blower-fansink-pci-e-bulk.html">270.01€</a></td>
+				</tr>
+			</table>
+			
+			<table class="pc">
+				<tr>
+					<th colspan="3" class="hover" hovertext="Solid-State Drive">SSD</th>
+					<th colspan="3" class="hover" hovertext="Hard-Drive">HD</th>
+					<th colspan="3">Case</th>
+					<th colspan="3" title="Power Supply">PSU</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="ssd" value="OCZ Trion 150" id="OCZ Trion 150"><label for="OCZ Trion 150">OCZ Trion 150</label></td>
+					<td>240GB</td>
+					<td><a target="_blank" href="https://www.amazon.it/dp/B01B4NUKMY">66.00€</a></td>
+					<td><input type="checkbox" name="hd" value="DT01ACA100" id="DT01ACA100"><label for="DT01ACA100">Toshiba</label></td>
+					<td>1TB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-hard_disk_interno_35_toshiba_dt01aca_1tb_7200rpm_32mb_sata3_dt01aca100-38630.htm">44.60€</a></td>
+					<td><input type="checkbox" name="case" value="iTek Shadow" id="iTek Shadow"><label for="iTek Shadow">iTek Shadow</label></td>
+					<td>mATX</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-case_itek_shadow_midi_nero_con_alimentatore_500w_micro_atx-29155.htm">27.30€</a></td>
+					<td><input type="checkbox" name="alimentatori" value="XFX PRO 450W" id="XFX PRO 450W"><label for="XFX PRO 450W">XFX PRO</label></td>
+					<td>450W</td>
+					<td><a href="#">0€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="ssd" value="MX200" id="MX200"><label for="MX200">MX200</label></td>
+					<td>250GB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-ssd_crucial_mx200_250gb_25_lettura_555mbs_scrittura_500mbs_sata3_ct250mx200ssd1-73133.htm">84.10€</a></td>
+					<td><input type="checkbox" name="hd" value="WD10EZRZ" id="WD10EZRZ"><label for="WD10EZRZ">WD Green</label></td>
+					<td>1TB</td>
+					<td><a target="_blank" href="https://www.amazon.it/dp/B013HNYVLA">45.99€</a></td>
+					<td><input type="checkbox" name="case" value="Enermax Ostrog Giant" id="Enermax Ostrog Giant"><label for="Enermax Ostrog Giant">Enermax Ostrog Giant</label></td>
+					<td>ATX</td>
+					<td><a href="#">0€</a></td>
+					<td><input type="checkbox" name="alimentatori" value="XFX TS 550W" id="XFX TS 550W"><label for="XFX TS 550W">XFX TS</label></td>
+					<td>550W</td>
+					<td><a href="#">0€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="ssd" value="850 Evo" id="850 Evo"><label for="850 Evo">850 Evo</label></td>
+					<td>250GB</td>
+					<td><a target="_blank" href="http://www.taocomputer.eu/shop2007/scheda.asp?id=32561">87.84€</a></td>
+					<td><input type="checkbox" name="hd" value="WD10EZEX" id="WD10EZEX"><label for="WD10EZEX">WD Blue</label></td>
+					<td>1TB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-hard_disk_interno_35_western_digital_caviar_blue_1tb_7200rpm_64mb-32828.htm">47.40€</a></td>
+					<td><input type="checkbox" name="case" value="Enermax Chakra" id="Enermax Chakra"><label for="Enermax Chakra">Enermax Chakra</label></td>
+					<td>ATX</td>
+					<td><a href="#">0€</a></td>
+					<td><input type="checkbox" name="alimentatori" value="EVGA 500B" id="EVGA 500B"><label for="EVGA 500B">EVGA 500B</label></td>
+					<td>500W</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-alimentatore_pc_evga_500b_500w_80_plus_bronze_100_b1_0500_k2-120696.htm">51.00€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="ssd" value="OCZ Vector 180" id="OCZ Vector 180"><label for="OCZ Vector 180">OCZ Vector 180</label></td>
+					<td>240GB</td>
+					<td><a target="_blank" href="http://www.eprice.it/ssd-OCZ/d-6558219">127.00€</a></td>
+					<td><input type="checkbox" name="hd" value="ST1000DM003" id="Seagate 1TB"><label for="Seagate 1TB">Seagate</label></td>
+					<td>1TB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-hard_disk_interno_seagate_barracuda_1tb_35_7200rpm_64mb_sata3-27264.htm">49.10€</a></td>
+					<td><input type="checkbox" name="case" value="Corsair 200R" id="Corsair 200R"><label for="Corsair 200R">Corsair 200R</label></td>
+					<td>ATX</td>
+					<td><a target="_blank" href="http://www.diginetstore.it/corsair/697-corsair-carbide-series-200r.html">66.80€</a></td>
+					<td><input type="checkbox" name="alimentatori" value="Corsair CX500" id="Corsair CX500"><label for="Corsair CX500">Corsair CX500</label></td>
+					<td>500W</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-alimentatore_pc_corsair_cx500_500w_atx_80_bronze_cp_9020047_eu-35156.htm">65.50€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="ssd" value="850 Pro" id="850 Pro"><label for="850 Pro">850 Pro</label></td>
+					<td>256GB</td>
+					<td><a target="_blank" href="https://www.amazon.it/dp/B00LMXBOP4">124.98€</a></td>
+					<td><input type="checkbox" name="hd" value="DT01ACA200" id="DT01ACA200"><label for="DT01ACA200">Toshiba</label></td>
+					<td>2TB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-hard_disk_interno_35_toshiba_dt01aca200_2tb_7200rpm_64mb_sata3_dt01aca200-38632.htm">63.30€</a></td>
+					<td><input type="checkbox" name="case" value="iTek Spacebox" id="iTek Spacebox"><label for="iTek Spacebox">iTek Spacebox</label></td>
+					<td>mATX</td>
+					<td><a target="_blank" href="https://www.amazon.it/dp/B00O4499NM">34.99€</a></td>
+					<td><input type="checkbox" name="alimentatori" value="EVGA 600B" id="EVGA 600B"><label for="EVGA 600B">EVGA 600B</label></td>
+					<td>600W</td>
+					<td><a target="_blank" href="http://www.puntocomshop.it/evga/244639-netzteil-evga-600w-600b-80bronze-cod-100-b1-0600-k2-4250810000000.html">66.28€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="ssd" value="OCZ Trion 150 480" id="OCZ Trion 150 480"><label for="OCZ Trion 150 480">OCZ Trion 150</label></td>
+					<td>480GB</td>
+					<td><a target="_blank" href="https://www.amazon.it/dp/B01B4NUKME">114.99€</a></td>
+					<td><input type="checkbox" name="hd" value="ST2000DM001" id="ST2000DM001"><label for="ST2000DM001">Seagate</label></td>
+					<td>2TB</td>
+					<td><a target="_blank" href="https://www.amazon.it/Seagate-Desktop-ST2000DM001-Unit%C3%A0-desktop/dp/B008FXHKVQ">67.97€</a></td>
+					<td><input type="checkbox" name="case" value="Thermaltake V21" id="Thermaltake V21"><label for="Thermaltake V21">Thermaltake V21</label></td>
+					<td>mATX</td>
+					<td><a target="_blank" href="https://www.amazon.it/dp/B00PN4WWH2">64.98€</a></td>
+					<td><input type="checkbox" name="alimentatori" value="Corsair CX500M" id="Corsair CX500M"><label for="Corsair CX500M">Corsair CX500M</label></td>
+					<td>500W</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-alimentatore_pc_modulare_corsair_cx500m_500w_80_bronze_atx-38048.htm">71.40€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="ssd" value="MX200 500" id="MX200 500"><label for="MX200 500">MX200</label></td>
+					<td>500GB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-ssd_crucial_mx200_500gb_25_lettura_555mbs_scrittura_500mbs_sata3_ct500mx200ssd1-73154.htm">142.20€</a></td>
+					<td><input type="checkbox" name="hd" value="WD20EZRZ" id="WD20EZRZ"><label for="WD20EZRZ">WD Blue</label></td>
+					<td>2TB</td>
+					<td><a target="_blank" href="https://www.amazon.it/dp/B018RW7GOU/">69.98€</a></td>
+					<td><input type="checkbox" name="case" value="Antec P50" id="Antec P50"><label for="Antec P50">Antec P50</label></td>
+					<td>mATX</td>
+					<td><a target="_blank" href="https://www.amazon.it/dp/B00TWI96AG">58.16€</a></td>
+					<td><input type="checkbox" name="alimentatori" value="XFX Pro 650W" id="XFX Pro 650W"><label for="XFX Pro 650W">XFX Pro</label></td>
+					<td>650W</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-alimentatore_pc_xfx_pro_series_650w_core_edition_bronze_80plus-27249.htm">71.70€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="ssd" value="850 Evo 500" id="850 Evo 500"><label for="850 Evo 500">850 Evo</label></td>
+					<td>500GB</td>
+					<td><a target="_blank" href="http://www.taocomputer.eu/shop2007/scheda.asp?id=32562">140.76€</a></td>
+					<td><input type="checkbox" name="hd" value="DT01ACA300" id="DT01ACA300"><label for="DT01ACA300">Toshiba</label></td>
+					<td>3TB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-hard_disk_interno_toshiba_dt01aca300_35_3tb_7200rpm_sata3-36734.htm">82.60€</a></td>
+					<td><input type="checkbox" name="case" value="Itek Eclipse" id="Itek Eclipse"><label for="Itek Eclipse">Itek Eclipse</label></td>
+					<td>mATX</td>
+					<td><a target="_blank" href="https://www.amazon.it/dp/B00R7F7NIS">61.99€</a></td>
+					<td><input type="checkbox" name="alimentatori" value="Corsair CX600" id="Corsair CX600"><label for="Corsair CX600">Corsair CX600</label></td>
+					<td>600W</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-alimentatore_pc_corsair_builder_series_cx600_80plus_bronze_600w-35491.htm">71.80€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="ssd" value="OCZ Vector 180 480" id="OCZ Vector 180 480"><label for="OCZ Vector 180 480">OCZ Vector 180</label></td>
+					<td>480GB</td>
+					<td><a target="_blank" href="http://www.bpm-power.com/it/product/1463904/">175.91€</a></td>
+					<td><input type="checkbox" name="hd" value="WD30EZRZ" id="WD30EZRZ"><label for="WD30EZRZ">WD Blue</label></td>
+					<td>3TB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-hard_disk_interno_35_western_digital_caviar_blue_3tb_64mb_5400rpm_sata3-104201.htm">89.40€</a></td>
+					<td><input type="checkbox" name="case" value="iTek Emerald D5S" id="iTek Emerald D5S"><label for="iTek Emerald D5S">iTek Emerald D5S</label></td>
+					<td>mATX</td>
+					<td><a target="_blank" href="https://www.amazon.it/dp/B00O44998M">62.99€</a></td>
+					<td><input type="checkbox" name="alimentatori" value="XFX TS 650W" id="XFX TS 650W"><label for="XFX TS 650W">XFX TS</label></td>
+					<td>650W</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-alimentatore_pc_xfx_ts_650w_atx_80_gold_p1_650g_ts3x-58579.htm">79.20€</a></td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="ssd" value="850 Pro 512" id="850 Pro 512"><label for="850 Pro 512">850 Pro</label></td>
+					<td>480GB</td>
+					<td><a target="_blank" href="http://www.puntocomshop.it/400-gb/22318-ssd-512gb-25-samsung-850-pro-series-sata-iii-rt-8806090000000.html">214.15€</a></td>
+					<td><input type="checkbox" name="hd" value="ST3000DM001" id="ST3000DM001"><label for="ST3000DM001">Seagate</label></td>
+					<td>3TB</td>
+					<td><a target="_blank" href="https://www.e-key.it/prod-hard_disk_interno_seagate_barracuda_3tb_35_7200rpm_64mb_sata3-27300.htm">92.10€</a></td>
+					<td><input type="checkbox" name="case" value="Thermaltake Core V1" id="Thermaltake Core V1"><label for="Thermaltake Core V1">Thermaltake Core V1</label></td>
+					<td>mITX</td>
+					<td><a target="_blank" href="https://www.amazon.it/dp/B00PN4WWH2">46.99€</a></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+			</table>
+	<footer id="footer">
+		Copyright Valentino D'Anesio 2016
+	</footer>
+	</div>
+</body>
+</html>

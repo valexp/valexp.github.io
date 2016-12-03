@@ -1,0 +1,110 @@
+#header{
+	text-align: center;
+}
+#primario{
+	height: 68px;
+	background: linear-gradient(#515763 0%, #2f3540 100%);
+}
+#lista{
+	display: inline-flex;
+	padding: 20px;
+	font: bold 20px Tahoma;
+}
+ul li{
+	margin-left: 20px;
+}
+#lista li a:hover{
+	background: #1e87b9;
+	border-radius: 5px;
+}
+#secondario{
+	background: linear-gradient(to bottom, #80B7DF, #1e8cd8);
+	height: 34px;
+}
+#sottolista{
+	display: inline-flex;
+	font: 15px Tahoma;
+	text-shadow: 1px 1px #999;
+	margin: 5px;
+}
+#sottolista li a:hover{
+	text-decoration: underline;
+}
+h1{
+	text-align: center;
+	font: bold 25px Tahoma;
+	margin: 20px;
+}
+a{
+	color:white;
+	text-decoration: none;
+	padding: 4px;
+}
+#cerca-totale{
+	display: inline-flex;
+	margin: 1% 0% 1% 2.1%;
+	width: 95.5%;
+}
+#cercanome_feedback{
+	margin-left: 10px;
+	margin-top: 2px;
+}
+#co{
+	margin-left: 10px;
+	margin-top: 2px;
+	width: 100px;
+}
+#risultato{
+	padding: 2px;
+	margin-left: 68.92%;
+	border: 1px solid grey;
+	width: 150px;
+}
+.bordorisultato{
+	background: linear-gradient(to bottom, #80B7DF, #1e8cd8);
+}
+td a{
+	color: black;
+}
+#footer{
+	display: flex;
+	justify-content: center;
+	border-bottom: 2px solid orange;
+	border-top: 2px solid orange;
+	padding: 20px;
+}
+table{
+	margin-left: 2%;
+	width: 96%;
+	border-collapse:separate; 
+	border-spacing:2px 2px;
+	margin-bottom: 50px;
+}
+th{
+	border: 1px solid grey;
+	padding: 5px;
+	font: Bold 13px Tahoma;
+}
+td{
+	border: 1px solid grey;
+	vertical-align: middle;
+	padding: 0px 5px;
+}
+tr:nth-child(even){
+	background: #ececec;
+}
+.highlight{
+	background-color: yellow;
+}
+.grey{
+	color: grey;
+}
+#hoverdiv{
+	display: none;
+	position: absolute;
+	font-size: 14px;
+	background-color: white;
+	color: #404040;
+	border: 1px solid #999;
+	padding: 6px;
+}

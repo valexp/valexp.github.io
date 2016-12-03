@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="it">
+<head>
+	<meta charset="utf-8"/>
+	<title>VaL's Website</title>
+	<link href="lightbox2-master/src/css/lightbox.css" rel="stylesheet">
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div id="big_wrapper">
+	<div id="header">
+		<nav id="primario">
+			<ul id="lista">
+				<li><a href="main.html">VaL</a></li>
+				<li><a href="ccna.html" id="selezionato">CCNA</a></li>
+				<li><a href="python.html">Python</a></li>
+				<li><a href="steam.html">Steam</a></li>
+			</ul>
+		</nav>
+		<nav id="secondario">
+			<ul id="sottolista">
+				<li><a href="ccna.html" id="sottoselezionato">OSI</a></li>
+				<li><a href="memorie.html">Boot/Memorie</a></li>
+				<li><a href="rprotocols.html">Routing Protocols</a></li>
+				<li><a href="stp.html">STP</a></li>
+				<li><a href="portsecurity.html">Port Security</a></li>
+				<li><a href="cabling.html">Cabling</a></li>
+				<li><a href="vlan.html">VLAN</a></li>
+				<li><a href="fhrp.html">Redundancy protocol</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div>
+		<table id="tabella">
+		  <tr>
+			<th>Memoria</th>
+			<th>Volatile/Non-Volatile</th>
+			<th>Stores</th>
+		  </tr>
+		  <tr>
+			<td>RAM</td>
+			<td>Volatile</td>
+			<td>Running IOS/Config<br>IP Routing and ARP tables</td>
+		  </tr>
+		  <tr>
+			<td>ROM</td>
+			<td>Non-Volatile</td>
+			<td>Bootup istructions<br>Bootstrap Program</td>
+		  </tr>
+		  <tr>
+			<td>NVRAM</td>
+			<td>Non-Volatile</td>
+			<td>Startup Config</td>
+		  </tr>
+		  <tr>
+			<td>Flash</td>
+			<td>Non-Volatile</td>
+			<td>IOS</td>
+		  </tr>
+		</table>
+		<table id="tabella">
+		  <tr>
+			<th>Configuration Register</th>
+			<th>Descrizione</th>
+		  </tr>
+		  <tr>
+			<td>0x2102</td>
+			<td>Default. Router looks for a startup configuration file in NVRAM and for a valid IOS image in Flash</td>
+		  </tr>
+		  <tr>
+			<td>0x2142</td>
+			<td>NVRAM contents are bypassed, startup configuration is ignored</td>
+		  </tr>
+		  <tr>
+			<td>0x2100</td>
+			<td>Router boots into ROM Monitor mode</td>
+		  </tr>
+		</table>
+		<div id="main">
+			<img src="router-boot-up-sequence.jpg">
+		</div>
+	<footer id="footer">
+		Copyright Valentino D'Anesio 2016
+	</footer>
+	</div>
+</body>
+</html>

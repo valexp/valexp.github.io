@@ -1,0 +1,154 @@
+#header{
+	text-align: center;
+}
+#primario{
+	height: 68px;
+	background: black;
+}
+#lista{
+	display: inline-flex;
+	padding: 20px;
+	font: bold 20px Tahoma;
+}
+ul li{
+	margin-left: 20px;
+}
+#lista li a:hover{
+	background: #1e87b9;
+	border-radius: 5px;
+}
+#secondario{
+	background: linear-gradient(to bottom, #80B7DF, #1e8cd8);
+	height: 34px;
+}
+#sottolista{
+	display: inline-flex;
+	font: 15px Tahoma;
+	text-shadow: 1px 1px #999;
+	margin: 5px;
+}
+#sottolista li a:hover{
+	text-decoration: underline;
+}
+a{
+	color:white;
+	text-decoration: none;
+	padding: 4px;
+}
+#selezionato{
+	background: #1e87b9;
+	border-radius: 5px;
+}
+#sottoselezionato{
+	font-weight: bold;
+}
+#main{
+	display: flex;
+	justify-content: center;
+}
+#main_section{
+	border: 2px solid black;
+	padding: 20px;
+	margin: 20px;
+}
+#side_news{
+	border: 2px solid red;
+	padding: 20px;
+	margin:20px;
+}
+#footer{
+	display: flex;
+	justify-content: center;
+	border-bottom: 2px solid orange;
+	border-top: 2px solid orange;
+	padding: 20px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #1e8cd8;
+    color: white;
+    border: none;
+    cursor: pointer;
+	font: 15px Tahoma;
+	margin-left: 10px;
+	margin-top: -5px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #f1f1f1; 
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: black;
+	border-radius: 5px;
+}
+#freccia{
+	width: 15px;
+	height: 15px;
+	background: url('http://www.metacritic.com/images/layout/tall_skinny_02.png') no-repeat -4px -250px;
+}
+table{
+	margin: 30px 0px;
+	width: 40%;
+	margin-left: 30%;
+}
+td, th {
+    border: 2px solid #1e8cd8;
+    text-align: center;
+    padding: 8px;
+	vertical-align: middle;
+}
+th{
+	font: bold 15px Tahoma;
+	color: white;
+	background: linear-gradient(to bottom, #80B7DF, #1e8cd8);
+}
+#tabellapiccola tr th{
+	background: linear-gradient(to bottom, #80B7DF, #1e8cd8);
+	border: 2px solid #1e8cd8;
+}
+#tabellavlan tr th:nth-child(1){
+	background: transparent;
+	border: 0px;ground: green;
+}
+table tr td:nth-child(1){
+	background: linear-gradient(to bottom, #80B7DF, #1e8cd8);
+	color: white;
+	font: bold 15px Tahoma;
+	text-align: left;
+}
+#tabellagrande {
+	width: 80%;
+	margin-left: 10%;
+}
