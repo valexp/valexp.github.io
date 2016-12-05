@@ -5,6 +5,11 @@
 	<title>VaL's Website</title>
 	<link rel="stylesheet" href="reset.css">
 	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="index.js"></script>
 </head>
 <body>
 	<div id="big_wrapper">
@@ -21,38 +26,62 @@
 		<nav id="secondario">
 		</nav>
 	</div>
-	<div id="main">
-		<section id="main_section">
-			<article>
-				<header>
-					<hgroup>
-						<h1>Title of Article</h1>
-						<h2>Subtitle for article</h2>
-					</hgroup>
-				</header>
-				<p>This is the best article ever</p>
-				<footer>
-					<p>- written by Bucky Roberts</p>
-				</footer>
-			</article>
-			
-			<article>
-				<header>
-					<hgroup>
-						<h1>Title of Article 2</h1>
-						<h2>Subtitle for article</h2>
-					</hgroup>
-				</header>
-				<p>This is the second best article ever</p>
-				<footer>
-					<p>- written by Bucky Roberts</p>
-				</footer>
-			</article>
-		</section>	
-		<aside id="side_news">
-			<h4>News</h4>
-			Bucky has a new dog!
-		</aside>
+	<div id="index">
+	
+	<div id="cercafilm">
+		Cerca Film: 
+		<input type="text" id="film" name="film">
+		<input type="button" id="visto" value="Cerca">
+		<input type="button" id="cancella" value="Cancella">
+	</div>
+	<br>
+	
+	<div id="cercaimdb">
+		Cerca film su IMDB - Seleziona le opzioni<br><br>
+		
+		<p>
+		<label for="nvoti">Numero voti minimi:</label>
+		<input type="text" id="nvoti" readonly style="border:0; color:#1e8cd8; font-weight:bold;">
+		</p>
+		<div id="slider-range-nvoti"></div>
+		
+		<p>
+		<label for="voto">Voto:</label>
+		<input type="text" id="voto" readonly style="border:0; color:#1e8cd8; font-weight:bold;">
+		</p>
+		<div id="slider-range-voto"></div>
+		
+		<p>
+		<label for="anni">Anno:</label>
+		<input type="text" id="anni" readonly style="border:0; color:#1e8cd8; font-weight:bold;">
+		</p>
+		<div id="slider-range-anni"></div>
+		
+		<div id="selects">
+		Nazione:<select name="nazione" id="nazione">
+			<option value=""></option>
+			<option value="it">Italia</option>
+			<option value="jp">Giappone</option>
+			<option value="kr">Corea del sud</option>
+			<option value="cn">Cina</option>
+		</select>
+		Tipo:<select name="tipo" id="tipo">
+			<option value="feature">Film</option>
+			<option value="tv_series">Serie TV</option>
+			<option value="mini_series">Mini-Serie</option>
+			<option value="game">Gioco</option>
+		</select>
+		Ordina per:<select name="ordine" id="ordine">
+			<option value="user_rating,desc">Rating</option>
+			<option value="moviemeter,asc">Popularity</option>
+			<option value="num_votes,desc">Number of Votes</option>
+			<option value="boxoffice_gross_us,desc">Incasso</option>
+		</select></div><br>
+		<input type="checkbox" name="imdb" value="giavisti" id="giavisti"><label for="giavisti">Escludi Film già visti</label><br>
+		<input type="button" id="cerca" value="Cerca">
+		<input type="button" id="reset" value="Reset">
+		
+	</div>
 	</div>
 	<footer id="footer">
 		Copyright Valentino D'Anesio 2016
