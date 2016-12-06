@@ -4,7 +4,7 @@
 	<meta charset="utf-8"/>
 	<title>VaL's Website</title>
 	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="index.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 	<link rel="stylesheet" href="jquery-ui.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
@@ -28,11 +28,9 @@
 	</div>
 	<div id="index">
 	
-	<div id="cercafilm">
-		Cerca Film: 
-		<input type="text" id="film" name="film">
-		<input type="button" id="visto" value="Cerca">
-		<input type="button" id="cancella" value="Cancella">
+	<div id="top-search">
+		<input type="text" id="search" name="search" class="focusless">
+		<div id="icona"></div>
 	</div>
 	<br>
 	
@@ -78,13 +76,14 @@
 			<option value="boxoffice_gross_us,desc">Incasso</option>
 		</select></div><br>
 		<input type="checkbox" name="imdb" value="giavisti" id="giavisti"><label for="giavisti">Escludi Film già visti</label><br>
-		<input type="button" id="cerca" value="Cerca">
-		<input type="button" id="reset" value="Reset">
-		
+		<div id="buttons">
+			<div id="cerca">Cerca</div>
+			<div id="reset">Reset</div>
+		</div>
 	</div>
 	</div>
 	<footer id="footer">
-		Copyright Valentino D'Anesio 2016
+		Copyright Valentino 2016
 	</footer>
 	</div>
 </body>

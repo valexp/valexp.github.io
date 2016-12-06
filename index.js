@@ -1,14 +1,24 @@
 $(document).ready(function(){
-	$("#visto").click(function(){
+	var textfocus = "Che film hai visto?"
+	$('#search').attr('value', textfocus).focus(function() {
+		if ($(this).val() == textfocus) {	
+			$(this).attr('value', '');
+			$(this).removeClass("focusless");
+	}
+	}).blur(function(){	
+		if ($(this).val() == '') {	
+			$(this).attr('value', textfocus);
+			$(this).addClass("focusless");
+	}
+	});
+	
+	$("#icona").click(function(){
 		apripagine();
 	});
-	$("#film").on('keyup', function (e) {
+	$("#search").on('keyup', function (e) {
     if (e.keyCode == 13) {
         apripagine();
     }
-	});
-	$("#cancella").click(function(){
-		$("#film").val("");
 	});
 	
 	sliders();
@@ -83,7 +93,7 @@ function sliders(){
 	
 	$( "#slider-range-anni" ).slider({
 		  range: true,
-		  min: 1900,
+		  min: 1910,
 		  max: 2016,
 		  values: [ 2000, 2016 ],
 		  slide: function( event, ui ) {
