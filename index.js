@@ -67,7 +67,7 @@ function apripagine(){
 	var icheck;
 	var boxoffice;
 	var reddit;
-	visto = $("#film").val();
+	visto = $("#search").val();
 	imdb = "http://www.imdb.com/find?ref_=nv_sr_fn&q=" + visto;
 	window.open(imdb,'_blank');
 	icheck = "https://www.icheckmovies.com/search/movies/?query=" + visto;
