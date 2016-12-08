@@ -1,35 +1,3 @@
-#header{
-	text-align: center;
-}
-#primario{
-	height: 68px;
-	background: linear-gradient(#515763 0%, #2f3540 100%);
-}
-#lista{
-	display: inline-flex;
-	padding: 20px;
-	font: bold 20px Tahoma;
-}
-ul li{
-	margin-left: 20px;
-}
-#lista li a:hover{
-	background: #1e87b9;
-	border-radius: 5px;
-}
-#secondario{
-	background: linear-gradient(to bottom, #80B7DF, #1e8cd8);
-	height: 34px;
-}
-#sottolista{
-	display: inline-flex;
-	font: 15px Tahoma;
-	text-shadow: 1px 1px #999;
-	margin: 5px;
-}
-#sottolista li a:hover{
-	text-decoration: underline;
-}
 h1{
 	text-align: center;
 	font: bold 25px Tahoma;

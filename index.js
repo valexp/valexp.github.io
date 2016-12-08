@@ -68,7 +68,7 @@ function apripagine(){
 	var boxoffice;
 	var reddit;
 	visto = $("#search").val();
-	imdb = "http://www.imdb.com/find?ref_=nv_sr_fn&q=" + visto;
+	imdb = "http://www.badtaste.it/ricerca/?q=" + visto;
 	window.open(imdb,'_blank');
 	icheck = "https://www.icheckmovies.com/search/movies/?query=" + visto;
 	window.open(icheck,'_blank');

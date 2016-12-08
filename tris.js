@@ -72,14 +72,8 @@ $(document).ready(function(){
 		}
 	});
 	/* BOTTONE RESET */
-	$("#bottone").mouseenter(function(){
-		$("#bottone").fadeTo("slow",1);
-	});
-	$("#bottone").mouseleave(function(){
-		$("#bottone").fadeTo("slow",0.7);
 	$("#bottone").click(function(){
 		reset();
-	});
 	});
 });
 
