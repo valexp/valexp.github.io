@@ -143,6 +143,7 @@ function controllorisultato(){
 function chihavinto(){
 	if (turno % 2 == 0){
 		alert("Complienti giocare O, hai vinto!");
+		alert(risultato);
 	}
 	else{
 		alert("Complienti giocare X, hai vinto!");
