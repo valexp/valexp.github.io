@@ -2,10 +2,12 @@ var turno = 0;
 var cella = 0;
 var risultato = [0,1,2,3,4,5,6,7,8];
 var pareggio = false;
+var secondi = 0;
 
 $(document).ready(function(){
+	setInterval(tempo, 1000);
 	$(".cella").addClass("cellapiena");
-	$('#stato').html("E' il turno del giocatore X, premi il tasto mostrato per selezionare una cella");
+	$('#stato').html("E' il turno del giocatore X, premi il tasto mostrato <br>per selezionare una cella prima dello scadere del tempo");
 	$(document).on('keydown', function (e) {
 		switch (e.keyCode) {
 			case 65:
@@ -39,17 +41,18 @@ $(document).ready(function(){
 		$("#" + tasto).children("kbd").hide();
 		$("#" + tasto).children("span").hide();
 		if ($("#" + tasto).is(".croce, .cerchio") == false) {
+			secondi = 0;
 			if (turno % 2 == 0){
 				$("#" + tasto).addClass("croce");
 				cella = $("#" + tasto).attr('id');
 				risultato[cella] = true;
-				$('#stato').html("E' il turno del giocatore O, premi il tasto mostrato per selezionare una cella");
+				$('#stato').html("E' il turno del giocatore O, premi il tasto mostrato <br>per selezionare una cella prima dello scadere del tempo");
 			}
 			else{
 				$("#" + tasto).addClass("cerchio");
 				cella = $("#" + tasto).attr('id');
 				risultato[cella] = false;
-				$('#stato').html("E' il turno del giocatore X, premi il tasto mostrato per selezionare una cella");
+				$('#stato').html("E' il turno del giocatore X, premi il tasto mostrato <br>per selezionare una cella prima dello scadere del tempo");
 			}
 			turno += 1;
 			/* VITTORIA CELLE ORIZZONTALI */
@@ -113,8 +116,9 @@ $(document).ready(function(){
 function reset(){
 	$(".cella").removeClass("croce cerchio")
 	turno = 0;
+	secondi = 0;
 	risultato = [0,1,2,3,4,5,6,7,8];
-	$('#stato').html("E' il turno del giocatore X, premi il tasto mostrato per selezionare una cella");
+	$('#stato').html("E' il turno del giocatore X, premi il tasto mostrato <br>per selezionare una cella prima dello scadere del tempo");
 	$(".cella").children("kbd").show();
 	$(".cella").children("span").show();
 }
@@ -126,4 +130,20 @@ function playSound(e) {
 
 	audio.currentTime = 0;
 	audio.play();
+}
+
+function tempo(){
+	secondi +=1;
+	var GradiSecondi = ((secondi /60) * 360) +90;
+	$(".secondi").css({ 'transform': 'rotate(' + GradiSecondi + 'deg)'});
+	if (secondi == 60){
+		if (turno % 2 == 0){
+			alert("Hai impiegato troppo tempo! \nHa vinto il giocatore O");
+			reset();
+		}
+		else{
+			alert("Hai impiegato troppo tempo! \nHa vinto il giocatore X");
+			reset();
+		}
+	}
 }
